@@ -2,19 +2,24 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/foundation.css">
-  <link rel="stylesheet" href="./assets/app.css">
-  <title>
-    Musclerator: Accelerate Your Muscles</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musclerator: Accelerate Your Muscles</title>
+    <link rel="stylesheet" href="./assets/foundation.css">
+    <link rel="stylesheet" href="./assets/app.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-  <main id="main">
-    <div><a href="results.html" id="workoutResults">View your results!</a></div>
+  <header>
     <h1>Musclerator: Accelerate Your Muscles</h1>
-    <p>Enter in your one rep max for the exercises below. Click submit to show results.</p>
+  </header>
+
+   <main id="main">
+    <div><a href="results.html" id="workoutResults">View your results!</a></div>
+   <p>Enter in your one rep max for the exercises below. Click submit to show results.</p>
+     <main>
     <form action="results.html" method="post">
       <label for="benchPress">Bench Press lbs</label>
       <input type="number" name="benchPress" id="benchPress" min="0" max="1000" required>
