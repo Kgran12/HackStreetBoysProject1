@@ -1,0 +1,17 @@
+header {
+    height: 100px;
+    width: 100%;
+    border-bottom: 10px solid darkblue;
+    background-color: #23b5e2;
+  }
+
+h1 {
+    text-align: center;
+    line-height: 100px;
+  }
+main {
+    width: 70%;
+    margin: 20px auto;
+    border-bottom: 5px solid darkblue;
+    background-color: #23b5e2;
+}
