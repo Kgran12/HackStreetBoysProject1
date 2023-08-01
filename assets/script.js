@@ -32,7 +32,7 @@ async function getQuote() {
 }
 getQuote();
 
-const urlVideo = 'https://youtube-search-and-download.p.rapidapi.com/search?query=wieght+lifting+tips';
+const urlVideo = 'https://youtube-search-and-download.p.rapidapi.com/search?query=weight+lifting+tips';
 const optionsVideo = {
     method: 'GET',
     headers: {
@@ -51,6 +51,10 @@ async function getvideo() {
     }
 }
 getvideo();
+
+
+
+
 
 var roundtoThousandth = function (number) {
     return Math.round(number * 1000) / 1000;
