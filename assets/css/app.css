@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+}
+body {
+    color: #fff
+}
+main {
+    width: 70%;
+    margin: 20px auto;
+    border: 5px solid #58d6e1;
+    background-color: #246bb9;
+    padding: 50px auto;
+    justify-content: center;
+    color: #fff
+}
