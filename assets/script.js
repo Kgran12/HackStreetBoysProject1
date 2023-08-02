@@ -12,7 +12,7 @@
 // results.innerHTML = `
 
 
-const urlQuote = 'https://exercisedb.p.rapidapi.com/exercises';
+const urlQuote = 'https://exercisedb.p.rapidapi.com/exercisesper_page=5';
 const optionsQuote = {
     method: 'GET',
     headers: {
@@ -21,7 +21,7 @@ const optionsQuote = {
     }
 };
 
-async function getQuote() {
+async function getExcercise() {
     try {
         const response = await fetch(urlQuote, optionsQuote);
         const result = await response.json();
@@ -30,9 +30,9 @@ async function getQuote() {
         console.error(error);
     }
 }
-getQuote();
+getExcercise();
 
-const urlVideo = 'https://youtube-search-and-download.p.rapidapi.com/search?query=weight+lifting+tips';
+const urlVideo = 'https://youtube-search-and-download.p.rapidapi.com/search?query=weight+lifting+tipsper_page=5';
 const optionsVideo = {
     method: 'GET',
     headers: {
@@ -53,9 +53,6 @@ async function getvideo() {
 getvideo();
 
 
-
-
-
 var roundtoThousandth = function (number) {
     return Math.round(number * 1000) / 1000;
 }
@@ -64,14 +61,11 @@ var buildExercise = function (exerciseName, sets) {
     var results = '<tr><td>' + exerciseName + '</td>';
     for (var i = 0; i < sets.length; i++) {
         results += '<td>' + roundtoThousandth(sets[i]) + '</td>';
-    }
-
-    var buildDay = function (exercises) {
-        return '<table><tbody>' + exercises.join('') + '</tbody></table>';
-
-    }
 }
+var buildDay = function (exercises) {
+    return '<table><tbody>' + exercises.join('') + '</tbody></table>';
 
+}
 // function getQuote() {
 //     fetch(url, options)
 //         .then(function (response) {
