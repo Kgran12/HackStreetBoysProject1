@@ -12,7 +12,7 @@
 // results.innerHTML = `
 
 
-const urlQuote = 'https://exercisedb.p.rapidapi.com/exercisesper_page=5';
+const urlQuote = 'https://exercisedb.p.rapidapi.com/exercises';
 const optionsQuote = {
     method: 'GET',
     headers: {
@@ -52,20 +52,65 @@ async function getvideo() {
 }
 getvideo();
 
+var benchMax = document.getElementById("benchPress");
+var squatMax = document.getElementById("squat");
+var deadliftMax = document.getElementById("deadlift");
+var overheadPressMax = document.getElementById("overheadPress");
 
-var roundtoThousandth = function (number) {
-    return Math.round(number * 1000) / 1000;
-}
+var benchResults = document.getElementById("benchResults");
+var squatResults = document.getElementById("squatResults");
+var deadliftResults = document.getElementById("deadliftResults");
+var overheadPressResults = document.getElementById("overheadPressResults");
 
-var buildExercise = function (exerciseName, sets) {
+var submitButton = document.getElementById("submitButton");
+
+function submitResults() {
+    benchResults.innerHTML = benchMax.textContent * 1.03;
+    squatResults.innerHTML = squatMax.textContent * 1.03;
+    deadliftResults.innerHTML = deadliftMax.textContent * 1.03;
+    overheadPressResults.innerHTML = overheadPressMax.textContent * 1.03;
+};
+submitResults();
+
+function buildExercise (exerciseName, sets) {
     var results = '<tr><td>' + exerciseName + '</td>';
     for (var i = 0; i < sets.length; i++) {
         results += '<td>' + roundtoThousandth(sets[i]) + '</td>';
+    }
+    return results + '</tr>';
 }
-var buildDay = function (exercises) {
-    return '<table><tbody>' + exercises.join('') + '</tbody></table>';
+buildExercise();
 
-}
+
+submitButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    submitResults();
+});
+
+
+
+// submitButton.addEventListener("click", function () {
+//     benchResults.innerHTML = benchMax.value * 1.03;
+//     squatResults.innerHTML = squatMax.value * 1.03;
+//     deadliftResults.innerHTML = deadliftMax.value * 1.03;
+//     overheadPressResults.innerHTML = overheadPressMax.value * 1.03;
+// });
+
+
+
+// var roundtoThousandth = function (number) {
+//     return Math.round(number * 1000) / 1000;
+// }
+
+// var buildExercise = function (exerciseName, sets) {
+//     var results = '<tr><td>' + exerciseName + '</td>';
+//     for (var i = 0; i < sets.length; i++) {
+//         results += '<td>' + roundtoThousandth(sets[i]) + '</td>';
+// }
+// var buildDay = function (exercises) {
+//     return '<table><tbody>' + exercises.join('') + '</tbody></table>';
+
+// }
 // function getQuote() {
 //     fetch(url, options)
 //         .then(function (response) {
