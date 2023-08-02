@@ -3,35 +3,37 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musclerator: Accelerate Your Muscles</title>
-    <link rel="stylesheet" href="./assets/foundation.css">
-    <link rel="stylesheet" href="./assets/app.css">
-    <link rel="stylesheet" href="./assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musclerator: Accelerate Your Muscles</title>
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/foundation.css">
+  <link rel="stylesheet" href="assets/css/foundation.min.css">
+  <link rel="stylesheet" href="assets/images/">
 </head>
 
 <body>
   <header>
-    <h1>Musclerator: Accelerate Your Muscles</h1>
+    <img src="./assets/images/MUSCLERATOR LOGO.png" alt="musclerator logo">
   </header>
-   <main id="main">
-    <div><a href="results.html" id="workoutResults">View your results!</a></div>
-   <p>Enter in your one rep max for the exercises below. Click submit to show results.</p>
-     <main>
-    <form action="results.html" method="post">
-      <label for="benchPress">Bench Press lbs</label>
-      <input type="number" name="benchPress" id="benchPress" min="0" max="1000" required>
-      <label for="squat">Squat lbs</label>
-      <input type="number" name="squat" id="squat" min="0" max="1000" required>
-      <label for="deadlift">Deadlift lbs</label>
-      <input type="number" name="deadlift" id="deadlift" min="0" max="1000" required>
-      <label for="overheadPress">Overhead Press lbs</label>
-      <input type="number" name="overheadPress" id="overheadPress" min="0" max="1000" required>
-      <a href="results.html" class="button" id ="submitButton">Submit</a>
-  </main>
-  <script src="./assets/script.js"></script>
+  <main id="main">
+    <div><a href="results.html" id="workoutResults" style="color: #fff">View your results!</a></div>
+    <p>Enter in your one rep max for the exercises below. Click submit to show results.</p>
+    <main>
+      <form action="results.html" method="post">
+        <label for="benchPress" style="color: #fff">Bench Press lbs</label>
+        <input type="number" name="benchPress" id="benchPress" min="0" max="1000" required>
+        <label for="squat" style="color: #fff">Squat lbs</label>
+        <input type="number" name="squat" id="squat" min="0" max="1000" required>
+        <label for="deadlift" style="color: #fff;">Deadlift lbs</label>
+        <input type="number" name="deadlift" id="deadlift" min="0" max="1000" required>
+        <label for="overheadPress" style="color: #fff">Overhead Press lbs</label>
+        <input type="number" name="overheadPress" id="overheadPress" min="0" max="1000" required>
+        <input type="submit" value="Submit">
+      </form>
+    </main>
 
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>

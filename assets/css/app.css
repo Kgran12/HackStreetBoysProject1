@@ -1,0 +1,30 @@
+header {
+    padding-top: 5dvh;
+    padding-bottom: 5dvh;
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+}
+body {
+
+    justify-content: center;
+    color: #fff
+}
+main {
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+    border: 5px solid #58d6e1;
+    background-color: #246bb9;
+    padding: 50px auto;
+    justify-content: center;
+    color: #fff
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+form {
+    color: #fff
+}
