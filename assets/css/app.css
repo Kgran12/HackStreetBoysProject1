@@ -28,6 +28,7 @@ p {
 }
 
 form {
+<<<<<<< HEAD
     color: #fff;
 }
 
@@ -38,3 +39,7 @@ a:hover {
 input {
     text-align: center
 }
+=======
+    color: #fff
+
+>>>>>>> main
