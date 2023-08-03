@@ -27,4 +27,13 @@ p {
 }
 form {
     color: #fff
+}
+
+a:hover {
+    background-color: black;
+  }
+
+input {
+    text-align:center
+}  
 
