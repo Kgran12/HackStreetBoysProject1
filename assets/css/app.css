@@ -3,13 +3,14 @@ header {
     padding-bottom: 5dvh;
     display: flex;
     justify-content: center;
-    /* align horizontal */
 }
+
 body {
 
     justify-content: center;
     color: #fff
 }
+
 main {
     text-align: center;
     width: 70%;
@@ -25,6 +26,20 @@ p {
     display: flex;
     justify-content: center;
 }
+
 form {
+<<<<<<< HEAD
+    color: #fff;
+}
+
+a:hover {
+    background-color: black;
+}
+
+input {
+    text-align: center
+}
+=======
     color: #fff
 
+>>>>>>> main
