@@ -14,8 +14,8 @@ main {
     text-align: center;
     width: 70%;
     margin: 20px auto;
-    border: 5px solid #58d6e1;
-    background-color: #246bb9;
+    border: 5px solid black;
+    background-color: #3790c7;
     padding: 50px auto;
     justify-content: center;
     color: #fff
@@ -28,3 +28,11 @@ p {
 form {
     color: #fff
 }
+
+a:hover {
+    background-color: black;
+  }
+
+input {
+    text-align:center
+}  
