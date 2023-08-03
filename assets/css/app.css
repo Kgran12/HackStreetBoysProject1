@@ -27,8 +27,17 @@ p {
     justify-content: center;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #3790c7;
+    border: 5px black;
+    padding: 25px auto;
+    margin: 15px auto;
+}
+
 form {
-<<<<<<< HEAD
     color: #fff;
 }
 
@@ -39,7 +48,16 @@ a:hover {
 input {
     text-align: center
 }
-=======
-    color: #fff
 
->>>>>>> main
+thead {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 5dvh;
+}
+
+#exerciseExamples {
+    background-color: #3790c7;
+}
