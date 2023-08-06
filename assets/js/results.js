@@ -23,16 +23,23 @@ const optionsQuote = {
     }
 };
 
+
 async function getExercise() {
     try {
         const response = await fetch(urlQuote, optionsQuote);
         const result = await response.json();
         console.log(result);
+        var exerciseToDisplay = result[98].gifUrl;
+        var excerciseEl = ` <img src="${exerciseToDisplay}" alt="exercise gif">`
+        var exerciseContainerEl = document.querySelector("#exerciseExamples");
+        exerciseContainerEl.innerHTML = excerciseEl;
+        
     } catch (error) {
         console.error(error);
     }
 }
 getExercise();
+
 
 const urlVideo = 'https://youtube-search-and-download.p.rapidapi.com/search?query=weight+lifting+tipsper_page=5';
 const optionsVideo = {
@@ -48,8 +55,14 @@ async function getvideo() {
         const response = await fetch(urlVideo, optionsVideo);
         const result = await response.json();
         console.log(result);
+        var videoToDisplay = result.contents[0].video.videoId;
+        var videoEl = `
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/${videoToDisplay}"></iframe>`
+        var videoContainerEl = document.querySelector("#dynamicVideo");
+        videoContainerEl.innerHTML = videoEl;
     } catch (error) {
         console.error(error);
+
     }
 }
 getvideo();
