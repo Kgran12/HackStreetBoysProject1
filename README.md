@@ -20,4 +20,8 @@ For this challenge created the Javascript code for a random password generator.
 
 ## Credits
 
+ScreenShots:
+![screenshot](./assets/images/Homepage.png)
+![screenshot](./assets/images/results.png)
+
 Github_Repo-"https://kgran12.github.io/HackStreetBoysProject1/"
